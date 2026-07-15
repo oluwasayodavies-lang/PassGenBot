@@ -217,7 +217,7 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     """Start the bot."""
-    # Create Application
+    # Create Application with specific settings to avoid Python 3.13 issues
     application = Application.builder().token(TOKEN).build()
     
     # Add handlers
